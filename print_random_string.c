@@ -5,7 +5,7 @@
 #include <time.h>
 
 
-
+void rand_string(char *st, int size);
 // random string generator wrapper function
 char* rand_string_alloc(size_t size)
 {
@@ -28,7 +28,7 @@ int main()
 	srand( (unsigned)time(NULL) );
 
 	printf("Today's random word: ");
-    str = rand_string_alloc(size );
+    str = rand_string_alloc(size);
     printf("%s",str);
     free (str);
     
